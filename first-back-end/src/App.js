@@ -18,7 +18,8 @@ const MoviesList = () => {
     <div>
       <h1>Movies List</h1>
       {movies.map(movie => (
-        <div key={movie.id}>
+        <div key={movie.id} className='cont'>
+          <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}/>
           <h2>{movie.title}</h2>
           <p>{movie.overview}</p>
           <hr/>
