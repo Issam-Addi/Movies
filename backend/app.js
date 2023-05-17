@@ -11,6 +11,7 @@ app.use(cors());
 
 // Fetch movies from TMDB API
 app.get('/movies', async (req, res) => {
+
     try {
         const url = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&primary_release_year=2023`;
 
